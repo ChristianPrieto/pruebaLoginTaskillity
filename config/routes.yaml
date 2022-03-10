@@ -1,0 +1,15 @@
+controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation
+
+app_login:
+    path: /
+    controller: App\Controller\ControladorSeguridadController::login
+
+app_logout:
+    path: /logout
+    controller: App\Controller\ControladorSeguridadController::logout
